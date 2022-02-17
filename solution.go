@@ -16,7 +16,7 @@ func CalcSquare(sideLen float64, sidesNum sides) float64 {
 
 	s := int(sidesNum)
 	if s == 3 {
-		return 0.5 * (sideLen * sideLen)
+		return math.Sqrt(3) / 4 * (sideLen * sideLen)
 	}
 
 	if s == 4 {
@@ -24,7 +24,7 @@ func CalcSquare(sideLen float64, sidesNum sides) float64 {
 	}
 
 	if s == 0 {
-		return math.Pi * (sideLen * sideLen)
+		return math.Pi * (sideLen * sideLen) / 2
 	}
 
 	return 0
